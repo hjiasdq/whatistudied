@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>호이스팅과 TDZ 시각화</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .log { margin-bottom: 10px; }
+    .var { color: blue; }
+    .let { color: green; }
+    .const { color: red; }
+    .error { color: darkred; font-weight: bold; }
+    button { margin-top: 20px; padding: 10px 15px; }
+  </style>
+</head>
+<body>
+
+  <h2>var, let, const 호이스팅과 TDZ 시각화</h2>
+  
+  <div id="output"></div>
+  
+  <button id="runBtn">실행하기</button>
+  
+  <script>
+    const output = document.getElementById('output');
+    const runBtn = document.getElementById('runBtn');
+    
+    function log(msg, className='') {
+      const div = document.createElement('div');
+      div.textContent = msg;
+      if (className) div.classList.add(className);
+      output.appendChild(div);
+    }
+    
+    runBtn.onclick = () => {
+      output.innerHTML = '';
+      
+      // var 테스트
+      try {
+        log('var a 선언 전 접근:', 'var');
+        log(String(a), 'var'); // undefined
+      } catch(e) {
+        log('Error: ' + e.message, 'error');
+      }
+      var a = 100;
+      log('var a 선언 후 값:', 'var');
+      log(String(a), 'var');
+      
+      output.appendChild(document.createElement('hr'));
+      
+      // let 테스트
+      try {
+        log('let b 선언 전 접근:', 'let');
+        log(String(b), 'let'); // ReferenceError
+      } catch(e) {
+        log('Error: ' + e.message, 'error');
+      }
+      let b = 200;
+      log('let b 선언 후 값:', 'let');
+      log(String(b), 'let');
+      
+      output.appendChild(document.createElement('hr'));
+      
+      // const 테스트
+      try {
+        log('const c 선언 전 접근:', 'const');
+        log(String(c), 'const'); // ReferenceError
+      } catch(e) {
+        log('Error: ' + e.message, 'error');
+      }
+      const c = 300;
+      log('const c 선언 후 값:', 'const');
+      log(String(c), 'const');
+    }
+  </script>
+  
+</body>
+</html>
