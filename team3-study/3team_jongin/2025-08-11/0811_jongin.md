@@ -59,4 +59,3 @@ function sumArray(arr) {
 sum이 재할당 되고 조건부분의 i값이 배열의 length값 보다 작아지면 조건문이 끝나도록 작성했다.
 
 
-## 오늘의 main 공부

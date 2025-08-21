@@ -1,4 +1,4 @@
-# 0817 공부내용 📖
+# 0819 공부내용 📖
 
 ## 매일매일 1일 면접 대비
 
@@ -38,16 +38,24 @@
  #### Controlled Component와 Uncontrolled Component는 각각 어떤 상황에서 사용되나요?
 
  - 단순한 입력 필드가 포함된 폼에서는 입력 요소의 값을 리액트 상태로 관리할 필요성이 적으므로, Uncontrolled Component를 사용하는 것이 더 간단하고 성능이 좋다. 사용자가 제출 버튼을 클릭했을 때만 입력 값을 가져와도 충분한 경우를 예시로 들 수 있다. 반면, 값을 입력할 때마다 유효성 검증을 실시간으로 해주어야 하는 경우에는 Controlled Component를 사용해야 한다.
+
 ## 오늘의 알고리즘 문제
 
 ### 1번 문제
+![alt text](image.png)
 
+```
+function solution(num1, num2) {
+    let divide = num1 % num2;
+    return divide;
+}
 
+```
 ### 2번 문제
+![alt text](image-1.png)
+```
+function solution(age) {
+    return 2022 - age + 1;
+}
+```
 
-
-### 3번 문제
-
-
-
-## 오늘의 main 공부

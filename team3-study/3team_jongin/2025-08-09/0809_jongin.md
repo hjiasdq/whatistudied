@@ -94,7 +94,4 @@ function solution(slice, n) {
 for문을 활용하여 조건문 if를 만족하면 break가 나도록 했다.
 i판을 시켰을 때 총 조각 수가 사람 수보다 많으면 (slice * i >=n) 필요한 판수는 pizzas = i;
 
-## 오늘의 main 공부
-
-__JavaScript의 배열__
 

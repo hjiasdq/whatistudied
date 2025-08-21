@@ -134,5 +134,3 @@ flex-shrink는 flex-grwo와 쌍을 이루는 속성으로, 아이템이 felx-bas
 
 숫자가 커질수록 작아지고 기본값은1, 요소의 크기를 원하는대로 고정하고 싶을때는 flex-shrink:0;을 사용하면 된다.
 ```
-
-THE END

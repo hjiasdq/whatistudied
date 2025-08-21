@@ -88,5 +88,3 @@ let arr = [0, 1, 2, 3, 4, 5];
 let query = [4, 1, 2];
 console.log(solution(arr, query)); 
 ```
-
-## 오늘의 main 공부
