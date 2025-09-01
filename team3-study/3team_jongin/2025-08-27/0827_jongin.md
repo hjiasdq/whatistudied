@@ -324,5 +324,5 @@ const myTags2 = document.getElementsByClassName('color-btn');
 console.log(myTags2);
 ```
 
-  ### 매일 1강씩 읽는 모던 자바스크립트 Deep Dive
+
   
