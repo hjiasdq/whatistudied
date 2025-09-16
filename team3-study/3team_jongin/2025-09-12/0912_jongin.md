@@ -132,7 +132,3 @@ export default function GridExample() {
 카드 갤러리, 대시보드, 포트폴리오 같은 2D 배치
 
 전체 페이지 틀(헤더/사이드바/메인/푸터) 만들 때
-
-```
-
-```
